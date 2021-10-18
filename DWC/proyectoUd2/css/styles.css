@@ -1,0 +1,95 @@
+/*body {
+}*/
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background: orange;
+    color: white;
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980B9;
+}
+
+#contenido {
+    text-align: center;
+    color: teal;
+}
+
+#contenedorTexto {
+    padding: 0 5% 0 25%;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    border-top: black;
+    background-color: rgba(245, 115, 1, 0.2);
+}
+
+#fcm {
+    background-color: #FFB6C1;
+}
+
+#recuperacion {
+    background-color: #FFA07A;
+}
+
+#aerobica {
+    background-color: #DDA0DD;
+}
+
+#anaerobica {
+    background-color: #eb14bc;
+}
+
+#roja {
+    background-color: #FF4500;
+}
