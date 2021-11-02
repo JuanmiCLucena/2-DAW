@@ -1,0 +1,30 @@
+* {
+    color: black;
+    font-family: courier;
+    font-size: 12 pt;
+    line-height: 1.2
+}
+
+h1 {
+    color: #636363;
+    font-size: 24 pt;
+}
+
+a:visited {
+    color: red;
+    font: bold;
+    text-decoration-line: underline;
+    text-decoration-style: double;  /*no funciona*/
+}
+
+ul {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration: double;
+    color: grey;
+}
+
+a:link {
+    color: #9c9c9c;
+    font-style: cursive;
+}
