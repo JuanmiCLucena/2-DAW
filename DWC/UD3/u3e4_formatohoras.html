@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato Horas</title>
+</head>
+
+<body>
+    <script>
+        var fecha = new Date();
+        do {
+            alert("Eliga de que forma mostrar la fecha: \n" +
+                "1) 14:35:07 (hora detallada con minutos y segundos) \n" +
+                "2) 02:35 PM o 02:35:07 AM (hora con minutos) \n" +
+                "3) FIN");
+            var formatoHoras = prompt("Introduzca el formato de las horas: ",);
+            switch (parseInt(formatoHoras)) {
+                case 1:
+                    alert(fecha.getHours() + ":" + fecha.getMinutes() + ":" + fecha.getSeconds());
+                    break;
+
+                case 2:
+                    if (fecha.getHours() > 12) {
+                        alert(fecha.getHours() - 12 + ":" + fecha.getMinutes() + " pm");
+                    } else {
+                        alert(fecha.getHours() + ":" + fecha.getMinutes() + " am");
+                    }
+                    break;
+                case 3:
+                    alert("¡Gracias por usar nuestra aplicación!");
+                    break;
+
+                default:
+                    alert("INCORRECTO , introduzca de nuevo de forma correcta.");
+                    break;
+            }
+        } while (formatoHoras != 3);
+    </script>
+</body>
+
+</html>
