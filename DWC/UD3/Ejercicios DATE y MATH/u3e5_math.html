@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mates</title>
+</head>
+
+<body>
+    <script>
+        var fecha = new Date();
+        do {
+            alert("1) Potencia \n" +
+                "2) Raíz \n" +
+                "3) Redondeo \n" +
+                "4) Trigonometría \n" +
+                "5) FIN");
+            var opcion = prompt("Introduzca la opción que desee: ",);
+            switch (parseInt(opcion)) {
+                case 1:
+                    let base = prompt("Introduzca la base: ",);
+                    parseInt(base);
+                    let exponente = prompt("Introduzca el exponente: ",);
+                    parseInt(exponente);
+                    let potencia = Math.pow(base, exponente);
+                    alert("La potencia de " + base + " elevado a " + exponente + " es: " + potencia);
+                    break;
+                case 2:
+                    do {
+                        var numero = prompt("Introduzca un número positivo: ",);
+                        parseInt(numero);
+                    } while (numero < 0);
+
+                    let raiz = Math.sqrt(numero);
+                    alert("La raíz de " + numero + " es: " + raiz);
+                    break;
+                case 3:
+                    let decimal = prompt("Introduce un número decimal: ",);
+                    parseFloat(decimal);
+                    let redondeo = Math.round(decimal);
+                    alert(redondeo);
+                    break;
+                case 4:
+                    do {
+                        var angulo = prompt("Introduce un ángulo entre 0 y 360 grados: ",);
+                        parseInt(angulo);
+                    } while (angulo > 360 || angulo < 0);
+                    angulo = (angulo * Math.PI) / 180;
+                    alert("Seno: " + Math.sin(angulo));
+                    alert("Coseno: " + Math.cos(angulo));
+                    alert("Tangente: " + Math.tan(angulo));
+                    break;
+                case 5:
+                    alert("¡Gracias por usar nuestra aplicación!");
+                    break;
+                default:
+                    alert("INCORRECTO , introduzca de nuevo de forma correcta.");
+                    break;
+            }
+        } while (opcion != 5);
+    </script>
+</body>
+
+</html>

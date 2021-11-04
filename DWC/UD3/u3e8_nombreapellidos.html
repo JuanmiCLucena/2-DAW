@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre y apellidos</title>
+</head>
+
+<body>
+    <script>
+        let x = prompt("Introduce tu nombre y apellidos: ",);
+        let nombreApellidos = x.replace(/ /g, "");
+        let tamanyo = nombreApellidos.length;
+        let xSplit = x.split(" ");
+        alert("El tamaño de la cadena de texto es: " + tamanyo);
+        alert(x.toUpperCase());
+        alert(x.toLowerCase());
+
+        if (xSplit.length == 3) {
+            let nombre = xSplit[0];
+            let apellido1 = xSplit[1];
+            let apellido2 = xSplit[2];
+            alert("Nombre: " + nombre
+            + "\n Apellido 1: " + apellido1
+            + "\n Apellido 2: " + apellido2);
+            let nombreUsuario = nombre.slice() + apellido1 + apellido2.slice();
+            alert(nombreUsuario);
+        } 
+
+        if (xSplit.length == 4) {
+            let nombre = xSplit[0];
+            let nombre2 = xSplit[1]
+            let apellido1 = xSplit[2];
+            let apellido2 = xSplit[3];
+            alert("Nombre: " + nombre + " " + nombre2
+            + "\n Apellido 1: " + apellido1
+            + "\n Apellido 2: " + apellido2);
+            let nombreUsuario = nombre.slice() + nombre2.slice() + apellido1 + apellido2.slice();
+            alert(nombreUsuario);
+        } 
+
+        
+
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <script>
+        let x = prompt("Inserte un número entero: ",);
+        let numero = parseFloat(x);
+        let exponencia = numero.toExponential();
+        alert("Su valor exponencial es: " + exponencia);
+        alert("El número con 4 decimales: " + numero.toFixed(4));
+        let numeroBinario = numero.toString(2);
+        let numeroOctal = numero.toString(8);
+        let numeroHexadecimal = numero.toString(16);
+        alert("El número en binario: " + numeroBinario);
+        alert("El número en octal: " + numeroOctal);
+        alert("El número en hexadecimal: 0x" + numeroHexadecimal);
+
+    </script>
+</body>
+</html>
