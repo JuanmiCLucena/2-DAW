@@ -1,0 +1,48 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #585858;
+    text-align: center;
+}
+
+body p, h1, h2 {
+    color: white;
+}
+
+h2::before {
+    content: "Hola! ";
+}
+
+#elemento_menu:first-child {
+    color: #53acff;
+}
+
+#elemento_menu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+#elemento_menu:hover:not(.active) {
+    background-color: #0665be;
+    transition: all 0.2s ease-in;
+    transform: scale(1.2);
+}
+
+.active {
+    background-color: #054077;
+}
+
+#menuhorizontal {
+    font-size: 16px;
+    text-align: center;
+    color: #CDCDCD;
+    margin-bottom: 10px;
+    margin-top: 45px;
+    background-color: #353535;
+}

@@ -1,0 +1,20 @@
+p::first-line {
+    color: green;
+}
+
+h2::first-letter {
+    color: blue;
+}
+
+p::after {
+    content: " - Seguir leyendo";
+    color: red;
+}
+
+p::before {
+    content: "*. ";
+}
+
+p::selection {
+    color: brown;
+}

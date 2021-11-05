@@ -1,0 +1,6 @@
+
+body{
+    text-shadow: aqua;
+    -moz-column-count: 5;
+         column-count: 5;
+}
