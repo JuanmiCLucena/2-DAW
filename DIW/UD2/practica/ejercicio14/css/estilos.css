@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Times;
+}
+
+h1 {
+    font-family: Courier;
+    font-size: 20pt;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Verdana;
+    font-size: 15pt;
+    color: rgb(21, 138, 216);
+    text-transform: uppercase;
+}
+
+li {
+    line-height: 2em
+}
+
+li span {
+    font-weight: bold;
+}
+
+.contenido {
+    position: relative;
+    left: 340px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Email</title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            color: green;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        /*esta regla forzaría la herencia de la propiedad color de su elemento
+contenedor, en este caso body, por tanto veríamos el enlace en azul.*/
+        p {
+            color: blue;
+        }
+
+        /*Esta anula la herencia de la prop. color definida en body. Resultado, el
+párrafo 2 en azul.*/
+        p {
+            font-size: 25px;
+        }
+
+        /*Esta no anula nada*/
+    </style>
+</head>
+
+<body>
+    <div>párrafo 1</div>
+    <p>párrafo 2</p>
+    <a href="#">Enlace</a>
+</body>
+
+</html>

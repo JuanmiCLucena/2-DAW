@@ -1,0 +1,12 @@
+.table {
+    display: inline;
+    border-collapse: separate;
+    
+}
+
+.table2 {
+    display: inline;
+    border-collapse: collapse;
+}
+
+td,th { border: 1px solid black; }
