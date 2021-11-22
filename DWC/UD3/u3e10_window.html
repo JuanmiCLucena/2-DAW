@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="abrirVentana()"> Ventana Nueva</button>
+    <br/>
+    <button type="button" onclick="cerrarVentana()"> Cerrar Nueva</button>
+    <br/>
+    <button type="button" onclick="mover10px()"> Mover 10px , 10px</button>
+    <br/>
+    <button type="button" onclick="mover100px()"> Mover 100px , 100px</button>
+    <br/>
+    <button type="button" onclick="aumentar10px()"> Aumentar 10x10</button>
+    <br/>
+    <button type="button" onclick="aumentar400x200()"> Aumentar 400,200</button>
+    <br/>
+    <button type="button" onclick="Scroll()"> Scroll</button>
+    <br/>
+    <button type="button" onclick="Scroll10px()"> scroll 10px</button>
+    <br/>
+    <script>
+        // u3e10_Windows
+        //Juan Miguel Costa Lucena
+        var myWindows;
+
+        function abrirVentana() {
+            confirm("Abrir nueva ventana S/N");
+
+            if (confirm) {
+                myWindows = window.open("", "", "top = 500, left = 500, width = 200, height = 80 ");
+
+                myWindows.document.write("<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,</p>");
+                myWindows.focus();
+                myWindows.document.write("<button type=\"button\"onclick =\"window.close()\">Cerrar ventana </button> ");
+
+            }
+        }
+
+        function cerrarVentana() {
+            if (window.myWindows) {
+                myWindows.close();
+            } else {
+                alert("Error");
+            }
+        }
+
+        function mover10px() {
+            myWindows.focus();
+            //Mueve la ventana actual el número de píxeles especificados.
+            myWindows.moveBy(10, 10);
+        }
+
+        function mover100px() {
+            //Coloca el foco en la ventana actual. 
+            myWindows.focus();
+            //Mueve la ventana a la posición especificada
+            myWindows.moveTo(100, 100);
+        }
+
+        function aumentar10px() {
+            myWindows.focus();
+            //El método cambia el tamaño de la ventana actual en una cantidad específica.
+            myWindows.resizeBy(10, 10);
+
+        }
+
+        function aumentar400x200() {
+            myWindows.focus();
+            //El método cambia el tamaño de una ventana al ancho y alto especificados.
+            myWindows.resizeTo(400, 200);
+        }
+
+        function Scroll() {
+            myWindows.focus();
+            //Mueve el scroll de la ventana el número de píxeles indicados
+            myWindows.scrollTo(0, 0);
+        }
+
+        function Scroll10px() {
+            myWindows.focus();
+            //Mueve el scroll de la ventana a la posición indicada.
+            myWindows.scrollTo(10, 10);
+        }
+    </script>
+
+</body>
+
+</html>
