@@ -13,6 +13,8 @@
         let x = prompt("Introduce tu nombre y apellidos: ",);
         let nombreApellidos = x.replace(/ /g, "");
         let tamanyo = nombreApellidos.length;
+        //Divide una cadena en un array de subcadenas.
+        //Siendo en este caso el espacio en blanco el que indica el límite.
         let xSplit = x.split(" ");
         alert("El tamaño de la cadena de texto es: " + tamanyo);
         alert(x.toUpperCase());
@@ -37,6 +39,7 @@
             alert("Nombre: " + nombre + " " + nombre2
             + "\n Apellido 1: " + apellido1
             + "\n Apellido 2: " + apellido2);
+            //Extrae una parte de la cadena y devuelve una nueva cadena.
             let nombreUsuario = nombre.slice() + nombre2.slice() + apellido1 + apellido2.slice();
             alert(nombreUsuario);
         } 
