@@ -1,0 +1,11 @@
+.contenedor{
+    border: 1px black solid;
+    margin: 1%;
+    text-align: justify;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
