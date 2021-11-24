@@ -1,0 +1,11 @@
+<html>
+<head>
+	<title>Prueba de PHP</title>
+</head>
+<body>
+	<?php
+	echo "<p>******</p> <br/>  <p>*******</p> <br/> <p>********</p>
+	    <p>*********</p>";
+	?>
+</body>
+</html>

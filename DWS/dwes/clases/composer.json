@@ -1,0 +1,10 @@
+{
+    "name": "usuario/clases",
+    "description": "Ejercicio de prueba",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DWES\\": "Clases"
+        }
+    }
+}
