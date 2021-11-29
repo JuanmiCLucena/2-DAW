@@ -33,8 +33,7 @@ function horario() {
     row_1.appendChild(heading_5);
     row_1.appendChild(heading_6);
     thead.appendChild(row_1);
-    table.setAttribute("border", "1");
-    table.setAttribute("align", "center");
+    table.setAttribute("id","tabla1");
 
     // Creating and adding data to second row of the table
     let row_2 = document.createElement('tr');
@@ -148,8 +147,7 @@ function horario() {
     row_5.appendChild(heading_13);
     row_5.appendChild(heading_14);
     thead2.appendChild(row_5);
-    table2.setAttribute("border", "1");
-    table2.setAttribute("align", "center");
+    table2.setAttribute("id","tabla2");
 
     // Creating and adding data to second row of the table
     let row_6 = document.createElement('tr');

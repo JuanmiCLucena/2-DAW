@@ -13,7 +13,7 @@
 
 </head>
 
-<body id="body">
+<body id="body" onload="fecha();">
     <script type="text/javascript" src="imc.js">
         imc.js
     </script>
@@ -26,8 +26,14 @@
     <script type="text/javascript" src="horario.js">
         horario.js
     </script>
+    <script type="text/javascript" src="fecha.js">
+        fecha.js
+    </script>
+    <script type="text/javascript" src="contraseña.js">
+        contraseña.js
+    </script>
 
-    <div class="header">
+    <div id="header">
         <h1>Asociación Deportiva</h1>
         <p>IES Luis Vélez de Guevara</p>
     </div>
@@ -54,6 +60,7 @@
                 <a class="nav-link text-warning" href="javascript:fcm()">Calculadora FCM</a>
                 <a class="nav-link text-warning" href="javascript:calculadoraCategoria()">Calculadora de categorías</a>
                 <a class="nav-link text-warning" href="javascript:horario()">Horario de la asociación</a>
+                <a class="nav-link text-warning" href="javascript:contraseña()">Contraseña</a>
             </nav>
         </div>
         <div class="col-10">
