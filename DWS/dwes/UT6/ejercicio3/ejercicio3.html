@@ -1,0 +1,60 @@
+<!-- ejemplo3.html -->
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <script>
+    function comprobarEmail(email) {
+        if (email.length == 0) {
+            document.getElementById("errorEmail").innerHTML = "";
+            return;
+        } else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    if (this.responseText != "OK") {
+                        document.getElementById("errorEmail").innerHTML = this.responseText;
+                    } else {
+                        document.getElementById("errorEmail").innerHTML = "";
+                    }
+                }
+            };
+            xmlhttp.open("GET", "comprobar.php?email=" + email, true);
+            xmlhttp.send();
+        }
+    }
+    function comprobarUsuario(usuario) {
+        if (usuario.length == 0) {
+            document.getElementById("errorUsuario").innerHTML = "";
+            return;
+        } else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    if (this.responseText != "OK") {
+                        document.getElementById("errorUsuario").innerHTML = this.responseText;
+                    } else {
+                        document.getElementById("errorUsuario").innerHTML = "";
+                    }
+                }
+            };
+            xmlhttp.open("GET", "comprobar.php?usuario=" + usuario, true);
+            xmlhttp.send();
+        }
+    }
+    </script>
+    <style>
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <p><strong>Escriba un correo electrónico:</strong></p>
+    Correo: <input type="text" onkeyup="comprobarEmail(this.value)"> <span id="errorEmail" class="error"></span>
+    <p><strong>Escriba un nombre de usuario:</strong></p>
+    Correo: <input type="text" onkeyup="comprobarUsuario(this.value)"> <span id="errorUsuario" class="error"></span>
+    </form>
+</body>
+</html>
